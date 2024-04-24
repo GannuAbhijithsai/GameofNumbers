@@ -156,9 +156,7 @@ function iscompleted(grid){
       if(!isvalidplace(puzzle,row,col,val)){
         setalt(true);
         setmsg(`You have entered the wrong value`);
-        setTimeout(() => {
-          setalt(false);
-        }, 3000);
+      
         const updatedPuzzle = puzzle.map((r, rIndex) =>
          rIndex === row ? r.map((c, cIndex) => (cIndex === col ? val : c)) : r
         
