@@ -88,13 +88,13 @@ const Savedpuzzle = () => {
 </ul>
   </div>
 </nav>
-      <h2 class="text-center" style={{marginTop:'1%',marginBottom:'2%',fontWeight:'bold',fontStyle:'oblique',color:'green'}}>Solved Puzzles</h2>
+      <h2 class="text-center" style={{marginTop:'1%',marginBottom:'2%',fontWeight:'bold',fontStyle:'oblique',color:'green'}}>TO DO</h2>
       {solPuzzle.length > 0 ? (
         <div className="container" style={{width:'100%',height:'100%'}}>
           <div class="row">{renderSudokuRows()}</div>
           </div>
       ) : (
-        <p>No solved puzzles available.</p>
+        <p>No puzzles saved.</p>
       )}
     </div>
   );
