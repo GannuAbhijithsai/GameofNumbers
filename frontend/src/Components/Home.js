@@ -53,7 +53,7 @@ export default function Home() {
   const handleResetClick = () => {
     setStartTime(0);
     setElapsedTime(0);
-   
+    setIsRunning(false);
     // Reset localStorage value
     localStorage.removeItem('time');
   };
